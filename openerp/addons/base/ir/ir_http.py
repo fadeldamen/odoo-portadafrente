@@ -95,9 +95,9 @@ class ir_http(osv.AbstractModel):
             getattr(self, "_auth_method_%s" % auth_method)()
         except (openerp.exceptions.AccessDenied, openerp.http.SessionExpiredException):
             raise
-        except Exception:
-            _logger.exception("Exception during request Authentication.")
-            raise openerp.exceptions.AccessDenied()
+        #except Exception as e:
+        #    _logger.exception("Exception during request Authentication.")
+        #    raise openerp.exceptions.AccessDenied()
         return auth_method
 
     def _handle_exception(self, exception):

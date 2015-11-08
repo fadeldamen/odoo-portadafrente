@@ -21,6 +21,8 @@
 
 from openerp.osv import fields, osv
 
+import logging
+_app_logger = logging.getLogger('APP/BASE_ACTION_RULE')
 
 class actions_server(osv.Model):
     """ Add email option in server actions. """
@@ -73,6 +75,7 @@ class actions_server(osv.Model):
         return {'value': values}
 
     def run_action_email(self, cr, uid, action, eval_context=None, context=None):
+        _app_logger.info("Sending email: %s", str(context.get('active_id')))
         if not action.template_id or not context.get('active_id'):
             return False
         self.pool['email.template'].send_mail(cr, uid, action.template_id.id, context.get('active_id'),

@@ -47,6 +47,8 @@ def url_for(path_or_uri, lang=None):
 
         lang = lang or request.context.get('lang')
         langs = [lg[0] for lg in request.website.get_languages()]
+        if isinstance(lang, unicode):
+            lang = lang.encode('utf-8')
 
         if (len(langs) > 1 or force_lang) and is_multilang_url(location, langs):
             ps = location.split('/')

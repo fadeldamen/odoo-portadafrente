@@ -557,14 +557,18 @@ class FieldConverter(osv.AbstractModel):
                             field_name, record._name, exc_info=True)
             content = None
 
-        if context and context.get('inherit_branding'):
-            # add branding attributes
-            g_att += ''.join(
-                ' %s="%s"' % (name, escape(value))
-                for name, value in self.attributes(
-                    cr, uid, field_name, record, options,
-                    source_element, g_att, t_att, qweb_context)
-            )
+        try:
+            if context and context.get('inherit_branding'):
+                # add branding attributes
+                g_att += ''.join(
+                    ' %s="%s"' % (name, escape(value))
+                    for name, value in self.attributes(
+                        cr, uid, field_name, record, options,
+                        source_element, g_att, t_att, qweb_context)
+                )
+        except Exception:
+            _logger.warning("Could not get attributes for field %s for model %s",
+                            field_name, record._name, exc_info=True)
 
         return self.render_element(cr, uid, source_element, t_att, g_att,
                                    qweb_context, content)

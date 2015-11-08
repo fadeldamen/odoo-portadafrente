@@ -1,0 +1,1086 @@
+/*/////////////////////////////////////////////////////////////////////
+ // 
+ // Custom theme code styles
+ /////////////////////////////////////////////////////////////////////*/
+/*
+ * --------------------------------------------------
+ * 1. General Elements
+ *--------------------------------------------------
+ */
+@import url(http://fonts.googleapis.com/css?family=Garamond);
+
+#navigation {
+  /* 1. Navigation wrapper */
+}
+
+#highlighted {
+  /* 2. Highlighted (below header) wrapper */
+}
+
+#content {
+  /* 3. Content wrapper */
+}
+
+#content-below {
+  /* 4. Content Below wrapper */
+}
+
+#footer {
+  /* 5. Footer wrapper */
+
+}
+
+/*
+ * --------------------------------------------------
+ * 2. Colours
+ *-------------------------------------------------- 
+ */
+ 
+ 
+/*
+ * --------------------------------------------------
+ * 3. Responsiveness/media queries
+ *--------------------------------------------------
+ */
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.div-logo{
+		visibility:hidden;
+	}
+	.div-logo-snippet{
+		visibility:hidden;
+	}
+	.imoveis-semelhantes{
+		display:none;
+		}
+	.barra-lateral-inferior{
+		display:none;
+		}
+	.span-img-thumb{
+	float:none;
+	}
+	.barra-lateral{
+		display:none;
+	}
+	.descricao-lista{
+	font-size:11px !important;
+	height:150px !important;
+	max-width:200px !important;
+    overflow:hidden !important;
+    text-overflow:ellipsis !important;
+    white-space: nowrap !important;
+	}
+	.listagem-container{
+	width:200px;
+	left:200px!important;
+	}
+	.barra-lateral-logo{
+	display:none;
+	}
+	.container {
+	max-width: 360px;
+	}
+	#snapengagelink{
+	visibility:hidden;
+	}
+	.pagina-principal {
+	padding: 0px!important;
+	}
+	.oe_product .oe_product_image {
+	width: 290px;
+	}
+	#products_grid .oe_product {
+	height: 470px!important;
+	}
+	.pagination > li > a, .pagination > li > span {
+	padding: 4px 8px!important;
+	}
+	.carousel .carousel-control.right {
+	right: 10px!important;
+	}
+	.tit-garamond {
+	font-size: 8px;
+	}
+	.titulos-paginas {
+	margin-right: 15px;
+	margin-left: 15px;
+	}
+	.oe_product section{
+	top: 150px!important;
+	left: 0px !important;
+	width: 100%!important;
+	}
+	.btnImprimir{
+	display:none;
+	}
+	.contacto-mobile{
+		margin-left: auto;
+		margin-right: auto;
+		width:50%;
+		}
+	.bt-contacto-mobile{
+	background: #8f0404;
+	background-image: -webkit-linear-gradient(top, #d2d2d2, #bababa);
+	background-image: -moz-linear-gradient(top, #d2d2d2, #bababa);
+	background-image: -ms-linear-gradient(top, #d2d2d2, #bababa);
+	background-image: -o-linear-gradient(top, #d2d2d2, #bababa);
+	background-image: linear-gradient(to bottom, #d2d2d2, #bababa);
+	-webkit-border-radius: 4;
+	-moz-border-radius: 4;
+	border-radius: 4px;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 12px;
+	text-decoration: none;
+	padding: 5px 10px 5px 10px;
+	border: solid #ffffff 0px;
+  }
+	
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) {
+	.oe_product section{
+	width:250px!important;
+	left:10px!important;
+	}
+	.btnImprimir{
+	display:none;
+	}
+	}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+	.div-logo{
+		visibility:hidden;
+	}
+	.div-logo-snippet{
+		visibility:hidden;
+	}
+	.imoveis-semelhantes{
+		display:none;
+		}
+	.barra-lateral-inferior{
+		display:none;
+		}
+	.span-img-thumb{
+	float:none;
+	}
+	.barra-lateral{
+		display:none;
+	}
+	.descricao-lista{
+	font-size:11px !important;
+	height:150px !important;
+	max-width:200px !important;
+    overflow:hidden !important;
+    text-overflow:ellipsis !important;
+    white-space: nowrap !important;
+	}
+	.listagem-container{
+	width:200px;
+	left:200px!important;
+	}
+	.barra-lateral-logo{
+	display:none;
+	}
+	.container {
+	max-width: 100%;
+	}
+	#snapengagelink{
+	visibility:hidden;
+	}
+	.pagina-principal {
+	padding: 0px!important;
+	}
+	.oe_product .oe_product_image {
+	width: 290px;
+	}
+	#products_grid .oe_product {
+	height: 250px!important;
+	}
+	.pagination > li > a, .pagination > li > span {
+	padding: 4px 8px!important;
+	}
+	.carousel .carousel-control.right {
+	right: 10px!important;
+	}
+	.tit-garamond {
+	font-size: 8px;
+	}
+	.titulos-paginas {
+	margin-right: 15px;
+	margin-left: 15px;
+	}
+	.oe_product section{
+	top: 0px!important;
+	left: 180px !important;
+	width: 100%!important;
+	}
+	.btnImprimir{
+	display:none;
+	}
+	
+}
+
+@media only screen and (min-device-width : 384px) and (max-device-width : 640px) and (orientation : landscape) {
+	.div-logo{
+		visibility:hidden;
+	}
+	.div-logo-snippet{
+		visibility:hidden;
+	}
+	.imoveis-semelhantes{
+		display:none;
+		}
+	.barra-lateral-inferior{
+		display:none;
+		}
+	.span-img-thumb{
+	float:none;
+	}
+	.barra-lateral{
+		display:none;
+	}
+	.descricao-lista{
+	font-size:11px !important;
+	height:150px !important;
+	max-width:200px !important;
+    overflow:hidden !important;
+    text-overflow:ellipsis !important;
+    white-space: nowrap !important;
+	}
+	.listagem-container{
+	width:200px;
+	left:200px!important;
+	}
+	.barra-lateral-logo{
+	display:none;
+	}
+	.container {
+	max-width: 100%;
+	}
+	#snapengagelink{
+	visibility:hidden;
+	}
+	.pagina-principal {
+	padding: 0px!important;
+	}
+	.oe_product .oe_product_image {
+	width: 290px;
+	}
+	#products_grid .oe_product {
+	height: 200px!important;
+	}
+	.pagination > li > a, .pagination > li > span {
+	padding: 4px 8px!important;
+	}
+	.carousel .carousel-control.right {
+	right: 10px!important;
+	}
+	.tit-garamond {
+	font-size: 8px;
+	}
+	.titulos-paginas {
+	margin-right: 15px;
+	margin-left: 15px;
+	}
+	.oe_product section{
+	top: 0px!important;
+	left: 180px !important;
+	width: 100%!important;
+	}
+	.btnImprimir{
+	display:none;
+	}
+	
+}
+
+@media (max-width: 768px) {
+  /* Small devices (tablets, 768px and up) */
+	.div-logo{
+		visibility:hidden;
+	}
+	.div-logo-snippet{
+		visibility:hidden;
+	}
+	.imoveis-semelhantes{
+		display:none;
+		}
+	.barra-lateral-inferior{
+		display:none;
+		}
+	.barra-lateral{
+		display:none;
+	}
+	.span-img-thumb{
+	float:none;
+	}
+	.descricao-lista{
+	font-size:11px !important;
+	height:30px !important;
+	max-width:320px !important;
+    overflow:hidden !important;
+    text-overflow:ellipsis !important;
+    white-space: nowrap !important;
+	}
+	.listagem-container{
+	width:400px!important;
+	left:180px!important;
+	}
+	.barra-lateral-logo{
+	display:none;
+	}
+	.btnImprimir{
+	display:none;
+	}	
+}
+@media (max-width: 992px) {
+  /* Medium devices (desktops, 992px and up) */
+	.div-logo{
+		visibility:hidden;
+	}
+	.div-logo-snippet{
+		visibility:hidden;
+	}
+	.barra-lateral-inferior{
+		display:none;
+		}
+	.barra-lateral{
+		display:none;
+	}
+	.span-img-thumb{
+	float:none;
+	}
+	.descricao-lista{
+	font-size:11px !important;
+	height:30px !important;
+	max-width:320px !important;
+    overflow:hidden !important;
+    text-overflow:ellipsis !important;
+    white-space: nowrap !important;
+	}
+	.barra-lateral-logo{
+	display:none;
+	}
+	.tit-garamond {
+	font-size: 14px;
+	}
+	.oe_product.oe_list .oe_product_image{
+		width:180px!important;
+	}
+}
+
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape){
+	.descricao-lista{
+	font-size:11px !important;
+	height:30px !important;
+	max-width:320px !important;
+    overflow:hidden !important;
+    text-overflow:ellipsis !important;
+    white-space: nowrap !important;
+	}
+	.listagem-container{
+	width:100%!important;
+	left:300px!important;
+	}
+	.contacto-mobile{
+	display:none;
+	}
+
+	}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	.descricao-lista{
+	font-size:11px !important;
+	height:30px !important;
+	max-width:320px !important;
+    overflow:hidden !important;
+    text-overflow:ellipsis !important;
+    white-space: nowrap !important;
+	}
+	.listagem-container{
+	width:100%!important;
+	left:200px!important;
+	}
+	.contacto-mobile{
+	display:none;
+	}
+
+	}
+@media only screen  and (min-width : 1224px) {
+  /* Large devices (large desktops, 1200px and up) */
+	.div-logo{
+	position: absolute;
+	z-index: 1;
+	padding-top:20px;
+	padding-left: 20px;
+	}
+	.span-img-thumb{
+	float:left;
+	}
+	.descricao-lista{
+	font-size:11px !important;
+	height:30px !important;
+	max-width:600px !important;
+    overflow:hidden !important;
+    text-overflow:ellipsis !important;
+    white-space: nowrap !important;
+	}
+	
+	.listagem-container{
+	width:500px;
+	left:300px!important;
+	}
+	.contacto-mobile{
+	display:none;
+	}
+}
+/*
+ * --------------------------------------------------
+ * 4. Misc
+ * Other stuff
+ *--------------------------------------------------
+ */
+
+.logo-portadafrente{
+	width:220px;
+	position:inherit;
+	}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > .nav-tabs > li.active > a:focus{
+	color: #660224;
+	cursor: default;
+	background-color: #c6c6c6;
+	border: 1px solid #ddd;
+	border-bottom-color: transparent;
+}
+
+
+.nav-tabs > li > a {
+	color: #fff;
+	margin-right: 2px;
+	line-height: 1.42857143;
+	border: 1px solid transparent;
+	border-radius: 4px 4px 0 0;
+
+}
+
+.nav-tabs > li > a:hover{
+	color: #000;
+}
+
+.tit-garamond{
+	font-family: 'Garamond', serif;
+	}
+	
+.barra-lateral{
+	padding-top:20px;
+	padding-bottom:20px;
+	background-color:#616161;
+	-webkit-border-top-right-radius: 20px;
+	-moz-border-radius-topright: 20px;
+	border-top-right-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	-moz-border-radius-bottomright: 20px;
+	border-bottom-right-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	border-bottom-left-radius: 20px;
+	color:#fff;
+	}
+.barra-lateral-logo{
+	padding-bottom:20px;
+	float:left;
+	}
+	
+.barra-lateral-inferior{
+	margin-top:20px;
+	padding-top:20px;
+	padding-bottom:20px;
+	background-color:#660224;
+	-webkit-border-top-right-radius: 20px;
+	-moz-border-radius-topright: 20px;
+	border-top-right-radius: 20px;
+	color:#fff;
+	clear: left;
+	}
+	
+.body-interiores {
+	background-color: #9c9c9c!important;
+	padding-top: 0px !important;
+	margin-top:0px !important;
+	padding-bottom: 0px !important;
+	margin-bottom:0px !important;
+}
+
+.span-img-thumb{
+	max-width:300px;
+	}
+
+.mb16{
+	margin-bottom:0px !important;
+	}
+.mt16{
+	margin-top:0px !important;
+	}
+
+
+.header-pagsinterior{
+	background-color:#3a3a3a;
+	padding-top: 16px !important;
+	margin-top:0px !important;
+	padding-bottom: 16px !important;
+	margin-bottom:0px !important;
+	}
+	
+.btn-success, .btn-success:focus, .btn-success:active, .btn-success.active, .open > .dropdown-toggle.btn-success {
+	color: #fff!important;
+	background-color: #660224!important;
+	border-color: #660224!important;
+}
+
+.btn-inverse{
+	color:#000!important;
+	}
+
+.btn-success:hover {
+	color: #fff;
+	background-color: #47061c;
+	border-color: #660224;
+}
+
+.oe_product_image {
+	width: 280px!important;
+	}
+	
+
+	
+.titulos-lista{
+	font-size:14px;
+	color:#660224; 
+	}
+	
+.oe_product.oe_list{
+	background-color:#ececec;
+	margin-bottom:15px;
+}
+.oe_product.oe_list .oe_product_image{
+	left:10px !important;
+	}
+.oe_product .oe_product_image img{
+	width:100%;
+	border: 5px solid white;
+	}
+	
+.descproduto{
+	font-size:14px !important;
+	}
+	
+.barra-lateral-inferior{
+	}
+	
+.pag-detalhe-imovel{
+	background-color:#ececec;
+	margin-left:30px;
+	}
+
+
+.floatright{
+	float:right!important;
+	padding-right:0px!important;
+	width:100%;
+	}
+	
+.img-vender{
+	margin-left:auto!important;
+	margin-right:auto!important;
+	display:block;
+	}
+	
+.navbar-default .navbar-nav > li > a {
+color: #fff !important;
+}
+
+.navbar-default .navbar-nav > .active > a {
+	background-color: transparent!important;
+	font-weight: bold;
+}
+
+.navbar-default .navbar-nav > .open > a {
+	background-color: transparent!important;
+	}
+	
+.navbar-default .navbar-nav > .open > a:hover{
+	background-color: #3a3a3a;
+	}
+.navbar-default .navbar-nav > .open > a:focus{
+	background-color: #3a3a3a;
+	}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover  {
+	background-color: #3a3a3a;
+	}
+.navbar{
+	margin-right: auto;
+	margin-left: auto;
+	}
+.img-vender-homepage{
+	background-color:#c6c6c6!important;
+	}
+	
+.footer-empreendimentos{	
+	background-color:#9c9c9c;
+	}
+	
+.blog-bg{
+	background-color:#9c9c9c !important;
+	}
+	
+.fa{
+	color:#000;
+	}
+	
+.cover .blog_title {
+	background-color: #565656;
+}
+
+.bg-detalhe-noticia{
+	background-color: #565656!important;
+	}
+	
+.blog_title{
+	float:left;
+	font-family: 'EB Garamond', serif;
+	color:#dadada;
+	}
+	
+.texto-detalhe-noticia{
+	background-color: #565656!important;
+	}
+	
+.js_fullheight{
+	min-height:250px!important;
+	}
+	
+.titulos-noticias a{
+	color:#660224 !important;
+	}
+	
+.blog_title js_tweet{
+	padding-bottom:250px!important;
+	}
+	
+.btn{
+	color:#bababa;
+	}
+	
+.div-logo{
+	position: absolute;
+	z-index: 1;
+	padding-top:20px;
+	padding-left: 20px;
+	}
+	
+.div-logo-snippet{
+	position: absolute;
+	z-index: 1;
+	padding-top:20px;
+	padding-left: 20px;
+	}
+	
+.pagina-principal{
+	background-color:#ececec;
+	padding: 20px;
+	clear:right;
+	}
+	
+.pagina-principal-noticias{
+	background-color:#ececec;
+	padding: 20px;
+	margin-bottom:20px;	
+	}
+
+.titulos-paginas{
+	font-family: 'EB Garamond', serif;
+	color:#660224;
+}
+
+.container{
+	padding-right:0px;
+	}
+	
+.carousel-caption{
+	visibility:hidden
+	}
+	
+.descricao-imovel{
+	padding-right: 10px !important;
+	padding-left: 10px !important;
+	padding-top: 20px !important;
+	padding-bottom: 2px !important;
+	}
+	
+.descricao-imovel p{
+	font-size:14px !important;
+	text-align:justify !important;
+	color: #272727!important;
+	}
+	
+.caracteristicas-imovel{
+	padding-right: 10px !important;
+	padding-left: 10px !important;
+	padding-top: 20px !important;
+	padding-bottom: 5px !important;
+	font-size:14px !important;
+	margin-bottom: 5px !important;
+	}
+	
+.caracteristicas-principais{
+	font-weight:bold!important;
+	color: #323232!important;
+}
+
+.caracteristicas-principais-valor{
+	font-weight:bold!important;
+	color: #660224!important;
+}
+
+.nav-pills > li > a {
+	border-radius: 4px;
+	background-color: #660224!important;
+	color: #fff;
+}
+
+
+.nav > a:hover, .nav > a:focus {
+	text-decoration: none;
+	background-color: #660224!important;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+	color: #fff;
+	background-color: #660224!important;
+}
+
+.caracteristicas-completas{
+	padding-right: 10px !important;
+	padding-left: 10px !important;
+	padding-top: 20px !important;
+	font-size:14px !important;
+	margin-bottom: 5px !important;
+	background-color:#fff !important;
+	color: #fff;
+	}
+	
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+	display: block;
+	width: 100% \9;
+	max-width: 100%;
+	height: auto;
+	width: 100%;
+	max-height: 650px;
+}
+
+.oe_product .oe_product_image img {
+	margin-top: 0!important;
+}
+
+.tn-prod-semelhantes{
+	background-color: #660224!important;
+	border:0!important;
+	width:93%!important;
+	}
+.carousel-control.left{
+	background:none!important;
+	}
+	
+.carousel-control.right{
+	background:none!important;
+	}
+	
+.fa-chevron-left{
+	color:#FFF;
+}
+
+.fa-chevron-right{
+	color:#FFF;
+}
+
+.nav > li > a {
+	padding: 12px 14px;
+}
+
+.botao-vermais{
+	background: #8f0404;
+  background-image: -webkit-linear-gradient(top, #630222, #bd003f);
+  background-image: -moz-linear-gradient(top, #630222, #a30a38);
+  background-image: -ms-linear-gradient(top, #630222, #a30a38);
+  background-image: -o-linear-gradient(top, #630222, #a30a38);
+  background-image: linear-gradient(to bottom, #630222, #a30a38);
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 10px 10px 10px 10px;
+  border: solid #ffffff 0px;
+  margin-top: 6px;
+  margin-right: 5px;
+}
+
+.botao-vermais:hover{
+background: #c70202;
+  background-image: -webkit-linear-gradient(top, #c70202, #d93434);
+  background-image: -moz-linear-gradient(top, #c70202, #d93434);
+  background-image: -ms-linear-gradient(top, #c70202, #d93434);
+  background-image: -o-linear-gradient(top, #c70202, #d93434);
+  background-image: linear-gradient(to bottom, #c70202, #d93434);
+  text-decoration: none;
+  color: #fff;
+}
+
+.marcaagua{
+	display: block;
+    background: url('http://www.portadafrente.com/website/image?field=datas&model=ir.attachment&id=3991') center center no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	}
+
+.bt-pesquisa-avancada > a{
+	color:#fff;
+	float:right;
+	}
+	
+.bt-pesquisa-avancada a:hover{
+	color:#FAFAFA!important;
+	}
+	
+.bt-pesquisa-avancada-interior{
+	padding-top:20px;
+	padding-bottom:20px;
+	color:#fff;
+	float:right;
+	width:100%;
+	}
+	
+.bt-pesquisa-avancada-interior a:hover{
+	color:#FAFAFA!important;
+	}
+	
+.bt-pesquisa-avancada-interior a{
+	color:#FFF!important;
+	}
+	
+
+	
+.bts-pesquisa{
+	float:left;
+	}
+	
+#snapengagelink{
+	background: url(http://www.portadafrente.com/website/image?field=datas&model=ir.attachment&id=3988) 5px no-repeat;
+	text-indent: 105px;
+	min-height: 100px;
+	height: 100px;
+	line-height: 73px;
+	vertical-align: middle;
+	padding: 16px 20px 0 26px !important;
+	overflow: hidden;
+	color: #fff;
+	font-size: 19px;
+	font-style: italic;
+	text-align: right;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	top: 180px;
+	}
+#snapengagelink {
+	position: fixed;
+	top: 150px;
+	right: -100%;
+	z-index: 9999;
+	-webkit-transition: margin 0.5s ease-out;
+    -moz-transition: margin 1s ease-out;
+    -o-transition: margin 1s ease-out;
+}
+
+#snapengagelink:hover {
+	cursor:pointer;
+    margin-right: 180px;
+}
+
+.carousel-control{
+	opacity: .9 !important;
+	}
+.numero-imoveis{
+	float:right;
+	}
+	
+.pagination > .active > a{
+	background-color:#780032!important;
+	border-color:#780032!important;
+	color:#fff!important;
+	}
+.pagination > li > a{
+	color:#780032!important;
+	}
+	
+.oe_product .ribbon-wrapper {
+	left: 0;
+}
+
+.oe_product .ribbon {
+	font: bold 15px Sans-Serif;
+	-webkit-transform: rotate(-45deg)!important;
+	-moz-transform: rotate(-45deg)!important;
+	-ms-transform: rotate(-45deg)!important;
+	-o-transform: rotate(-45deg)!important;
+	left: -30px!important;
+}
+
+.btn-danger {
+	background-color: #660224!important;
+	border-color: #8e1b42!important;
+}
+
+.oe_product .ribbon-interior {
+	font: bold 15px Sans-Serif;
+	-webkit-transform: rotate(-45deg)!important;
+	-moz-transform: rotate(-45deg)!important;
+	-ms-transform: rotate(-45deg)!important;
+	-o-transform: rotate(-45deg)!important;
+	left: -30px!important;
+}
+.btn-danger-interior {
+	background-color: #660224!important;
+	border-color: #8e1b42!important;
+	display: block!important;
+	opacity: 0.8;
+    filter: alpha(opacity=80);
+	margin-top: 20%!important;
+	font-size: large!important;
+	color: #fff;
+	-webkit-transform: rotate(-5deg)!important;
+	-moz-transform: rotate(-5deg)!important;
+	-ms-transform: rotate(-5deg)!important;
+	-o-transform: rotate(-5deg)!important;
+	width: 104%!important;
+}
+
+.preco-antigo{
+	text-decoration:line-through;
+	}
+.preco-novo{
+	font-size:14px;
+	color:#F01E1E;
+	}
+.preco-antigo-imovel{
+	text-decoration:line-through;
+	color:#F01E1E;
+	font-size:16px;
+	}
+
+.cookie-message {
+  position:fixed;
+  top:0;left:0;right:0;
+  padding:0 85px 0 20px;
+  background:#fff;
+  border-bottom:1px solid #ccc;
+  box-shadow:0px 0px 3px #ccc;
+  z-index: 99;
+}
+.cookie-message a {
+  position:absolute;
+  top:0; *top:-2px; right:20px;
+  cursor:pointer;
+}
+.cookie-message p, .cookie-message a {
+  color:#ffffff!important;
+  font:bold 11px/18px Arial;
+  margin:0.6em 0;
+}
+.blue {
+  border-bottom:1px solid #0E83AE;
+  background-color:#0990c3!important;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0e83ae), color-stop(50%, #0990c3), color-stop(100%, #0e9dd2));
+  background: -webkit-linear-gradient(#0e83ae, #0990c3, #0e9dd2);
+  background: -moz-linear-gradient(#0e83ae, #0990c3, #0e9dd2);
+  background: -o-linear-gradient(#0e83ae, #0990c3, #0e9dd2);
+  background: -ms-linear-gradient(#0e83ae, #0990c3, #0e9dd2);
+  background: linear-gradient(#0e83ae, #0990c3, #0e9dd2);
+}
+.blue p, .blue a { color:#fff; }
+
+.btnImprimir {
+  background: #8f0404;
+  background-image: -webkit-linear-gradient(top, #8f0404, #bd003f);
+  background-image: -moz-linear-gradient(top, #8f0404, #bd003f);
+  background-image: -ms-linear-gradient(top, #8f0404, #bd003f);
+  background-image: -o-linear-gradient(top, #8f0404, #bd003f);
+  background-image: linear-gradient(to bottom, #8f0404, #bd003f);
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 12px;
+  text-decoration: none;
+  float: right;
+  padding: 5px 10px 5px 10px;
+  border: solid #ffffff 0px;
+  margin-top: 6px;
+  margin-left: 15px;
+}
+
+.btnImprimir:hover {
+  background: #c70202;
+  background-image: -webkit-linear-gradient(top, #c70202, #d93434);
+  background-image: -moz-linear-gradient(top, #c70202, #d93434);
+  background-image: -ms-linear-gradient(top, #c70202, #d93434);
+  background-image: -o-linear-gradient(top, #c70202, #d93434);
+  background-image: linear-gradient(to bottom, #c70202, #d93434);
+  text-decoration: none;
+  color: #fff;
+}
+
+.btnVirtualTour {
+  background: #8f0404;
+  background-image: -webkit-linear-gradient(top, #630222, #bd003f);
+  background-image: -moz-linear-gradient(top, #630222, #a30a38);
+  background-image: -ms-linear-gradient(top, #630222, #a30a38);
+  background-image: -o-linear-gradient(top, #630222, #a30a38);
+  background-image: linear-gradient(to bottom, #630222, #a30a38);
+  -webkit-border-radius: 4;
+  -moz-border-radius: 4;
+  border-radius: 4px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 12px;
+  text-decoration: none;
+  padding: 10px 10px 10px 10px;
+  border: solid #ffffff 0px;
+  margin-top: 6px;
+  margin-right: 5px;
+}
+
+.btnVirtualTour:hover {
+  background: #c70202;
+  background-image: -webkit-linear-gradient(top, #c70202, #d93434);
+  background-image: -moz-linear-gradient(top, #c70202, #d93434);
+  background-image: -ms-linear-gradient(top, #c70202, #d93434);
+  background-image: -o-linear-gradient(top, #c70202, #d93434);
+  background-image: linear-gradient(to bottom, #c70202, #d93434);
+  text-decoration: none;
+  color: #fff;
+}
+
+h1, .h1 {
+  font-size: 32px !important;
+}

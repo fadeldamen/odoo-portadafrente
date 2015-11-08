@@ -321,8 +321,10 @@ def safe_eval(expr, globals_dict=None, locals_dict=None, mode="eval", nocopy=Fal
     except openerp.exceptions.AccessError:
         raise
     except Exception, e:
+        logging.exception(e)
         import sys
         exc_info = sys.exc_info()
-        raise ValueError, '"%s" while evaluating\n%r' % (ustr(e), expr), exc_info[2]
+        #raise ValueError, '"%s" while evaluating\n%r' % (ustr(e), expr), exc_info[2]
+        return ""
 
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

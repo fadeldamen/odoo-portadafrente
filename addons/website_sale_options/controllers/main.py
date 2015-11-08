@@ -7,7 +7,7 @@ from openerp.addons.website_sale.controllers.main import website_sale
 
 class website_sale_options(website_sale):
 
-    @http.route(['/shop/product/<model("product.template"):product>'], type='http', auth="public", website=True)
+    @http.route(['/shop/product/<model("product.product"):product>'], type='http', auth="public", website=True)
     def product(self, product, category='', search='', **kwargs):
         r = super(website_sale_options, self).product(product, category, search, **kwargs)
 

@@ -39,6 +39,35 @@
 
 """
 
+import sys
+class FauxTb(object):
+    def __init__(self, tb_frame, tb_lineno, tb_next):
+        self.tb_frame = tb_frame
+        self.tb_lineno = tb_lineno
+        self.tb_next = tb_next
+def current_stack(skip=0):
+    try: 1/0
+    except ZeroDivisionError:
+        f = sys.exc_info()[2].tb_frame
+    for i in xrange(skip + 2):
+        f = f.f_back
+    lst = []
+    while f is not None:
+        lst.append((f, f.f_lineno))
+        f = f.f_back
+    return lst
+def extend_traceback(tb, stack):
+    """Extend traceback with stack info."""
+    head = tb
+    for tb_frame, tb_lineno in stack:
+        head = FauxTb(tb_frame, tb_lineno, head)
+    return head
+def full_exc_info():
+    """Like sys.exc_info, but includes the full traceback."""
+    t, v, tb = sys.exc_info()
+    full_tb = extend_traceback(tb, current_stack(1))
+    return t, v, full_tb
+
 import copy
 import datetime
 import functools
@@ -2366,7 +2395,10 @@ class BaseModel(object):
         _schema.debug("Table '%s': added foreign key '%s' with definition=REFERENCES \"%s\" ON DELETE %s", *fk_def)
 
     def _drop_constraint(self, cr, source_table, constraint_name):
-        cr.execute("ALTER TABLE %s DROP CONSTRAINT %s" % (source_table,constraint_name))
+        try:
+            cr.execute("ALTER TABLE %s DROP CONSTRAINT %s" % (source_table,constraint_name))
+        except psycopg2.ProgrammingError:
+            pass
 
     def _m2o_fix_foreign_key(self, cr, source_table, source_field, dest_model, ondelete):
         # Find FK constraint(s) currently established for the m2o field,
@@ -3157,7 +3189,8 @@ class BaseModel(object):
         result = []
         try:
             result = records.read(list(fnames), load='_classic_write')
-        except AccessError:
+        except AccessError as e:
+            _logger.exception(e)
             pass
 
         # check the cache, and update it if necessary

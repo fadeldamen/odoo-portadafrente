@@ -29,6 +29,7 @@ from openerp.osv import fields, osv
 from openerp.tools import DEFAULT_SERVER_DATETIME_FORMAT
 
 _logger = logging.getLogger(__name__)
+_app_logger = logging.getLogger('APP/BASE_ACTION_RULE')
 
 DATE_RANGE_FUNCTION = {
     'minutes': lambda interval: timedelta(minutes=interval),
@@ -126,6 +127,7 @@ class base_action_rule(osv.osv):
         return record_ids
 
     def _process(self, cr, uid, action, record_ids, context=None):
+        _app_logger.info('Processing action %s', action.id)
         """ process the given action on the records """
         model = self.pool[action.model_id.model]
 

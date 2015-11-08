@@ -40,6 +40,7 @@ from openerp.tools.translate import _
 import openerp.workflow
 
 _logger = logging.getLogger(__name__)
+_app_logger = logging.getLogger('APP/BASE_ACTION_RULE')
 
 
 class actions(osv.osv):
@@ -998,6 +999,7 @@ class ir_actions_server(osv.osv):
         for action in self.browse(cr, uid, ids, context):
             eval_context = self._get_eval_context(cr, uid, action, context=context)
             condition = action.condition
+            _app_logger.info("Condition is %s", condition)
             if condition is False:
                 # Void (aka False) conditions are considered as True
                 condition = True

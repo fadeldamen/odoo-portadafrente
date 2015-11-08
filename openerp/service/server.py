@@ -462,6 +462,9 @@ class PreforkServer(CommonServer):
             workers_registry[pid] = worker
             return worker
         else:
+            import tracer
+            tracefpath = '/tmp/trace-{}.html'.format(os.getpid())
+            tracer.trace_start(tracefpath)
             worker.run()
             sys.exit(0)
 
